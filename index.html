@@ -91,7 +91,7 @@
         function displayImage(i) {
             // console.log(i); 
             gameBoard.innerHTML += '<div class="col-md-3 col-xs-4 gametile"><img id="cardz' + i +
-                '" src="memGame/img/guess.jpg" onclick="pickCard(\'' + solutionArray[i] + '\',\'' + i +
+                '" src="memorygame/img/guess.jpg" onclick="pickCard(\'' + solutionArray[i] + '\',\'' + i +
                 '\',this);return false;" class="flipimage"></div>';
 
         }
@@ -138,10 +138,10 @@
         function hideCard() {
             // console.log(flipArray);
             if (flipArray[2]) {
-                document.getElementById(flipArray[2]).src = "memGame/img/guess.jpg";
+                document.getElementById(flipArray[2]).src = "memorygame/img/guess.jpg";
             }
             if (flipArray[3]) {
-                document.getElementById(flipArray[3]).src = "memGame/img/guess.jpg";
+                document.getElementById(flipArray[3]).src = "memorygame/img/guess.jpg";
             }
             pickAgain();
         }
